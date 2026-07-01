@@ -33,8 +33,8 @@ If you've already enabled Template Matching in your Production account and are s
 Envelope sent for task 3 "0d552452-63c0-8a7b-80e5-c8663179014e"
 
 In Task 4 :
-recipientId is now "1" and "2"  (Unique ids)
-Added a valid email for Bruce Wayne
-Fixed xPosition to a positive value
-Fixed pagenumber to pageNumber (camel case)
+recipientId is now "1" and "2"  (Unique ids), 
+Added a valid email for Bruce Wayne, 
+Fixed xPosition to a positive value, 
+Fixed pagenumber to pageNumber (camel case).
 
