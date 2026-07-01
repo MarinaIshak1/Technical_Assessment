@@ -1,51 +1,35 @@
-# Technical Assessment
-​
-## Assessment Introduction
-​
-This repository contains the materials for the DocuSign Technical Support Engineer candidate technical assessment. You will need a [Developer sandbox](https://go.docusign.com/o/sandbox/?postActivateUrl=https://developers.docusign.com/) to complete these tasks, please request one via the link. During this assessment, you may experience error messages, inconsistent application behaviour, or steps that cannot be achieved. Please treat the tasks below as hypothetical cases that a customer has submitted. 
-​
-Please utilize the contents of this repository to complete the following tasks:
-​
-1. Using the purchase_order.pdf file in this repository, create and send an envelope.
-     - **Case submission:** Hello support, I tried to send the attached purchase_order.pdf to my co-worker but I'm receiving an error message, I'm not sure what it means, can you help?
-     - Please include a response you would write to this customer, and include it in your submission to the recruiter. 
-2. Import the DS_TSE_TechTemplate.zip template to your developer account and attempt the following:
-     - This imported template has automatic template matching enabled, and uploading the purchase_order.pdf would normally trigger automatic template matching.
-     - Create a new envelope using the purchase_order.pdf
-     - **Case submission:** Hello support, I migrated this template from my demo account to my production account, but when I try to use template matching, it's not working automatically. Why does the template matching of the imported template not automatically match the uploaded purchase_order.pdf?
-     - Please include a response you would write to this customer, and include it in your submission to the recruiter.
-3. Modify the template provided with the following changes and send the envelope to yourself:
-    - Add a conditional recipient with the following parameters
-        - Sending order 1
-        - Group Name: Accounting
-        - Role: High value deal approval
-        - Name and Email that you have access to
-        - Add a signature to the Purchase Order ( anywhere in the document ) for the conditional recipient
-        - Add a rule for this signature
-            - If the "the Grand Total" is Greater than 1000
-            - Route to the High value deal approval role
-    - Add a second recipient role named Legal
-    - Add a 1-page Document to the template ( e.g. a blank Word doc )
-    - Make the Legal role's recipient the last in the routing order, and set their action to "needs to view"
-    - Set up document visibility to have only the legal recipient able to view the 1-page document you uploaded. All other recipients should not be able to view it. 
-    - Open the envelope as each of the signers and ensure that only the legal recipient can view the additional 1-page document.
-    - Send the envelope based on the template and make sure all roles sign, including the High value deal approval role. 
-		
-4. Modify the API call in API TEST 1 to send successfully.
-​
-## Completion
-When prompted, please submit the Envelope IDs of the successfully sent envelopes for sections 1, 3, and 4. For question 3, also export the template and include the zip file in your submission.  For section 4 also include your completed JSON API call to the recruiting coordinator.
-​
-If you run into issues or have questions with the evaluation please contact us at [ds-tse-interview@docusign.com](mailto:ds-tse-interview@docusign.com)
-​
-## Notice
-Please be prepared to discuss your progress during the technical portion of your interview, including any challenges you encountered, potentially sending one of the envelopes and/or running the API call live during the interview. If you were unsuccessful at any portion of this assessment, please be prepared to discuss the obstacles you encountered and the steps you attempted to move forward.
-​
-​
-## Resources
-- [DocuSign Dev Sandbox](https://go.docusign.com/sandbox/productshot/)
-- [DocuSign User Guide](https://support.docusign.com/en/guides/ndse-user-guide)
-- [DocuSign Admin Guide](https://support.docusign.com/en/guides/ndse-admin-guide)
-- [API Reference](https://developers.docusign.com/docs/esign-rest-api/reference/)
-- [DocuSign Postman Collection](https://www.docusign.com/blog/dsdev-please-mr-postman)
-​
+Envelope ID for task 1: "05702bcc-706a-8a79-8005-6e8f857c01d0"
+
+Task 1 response
+
+"Hi,
+
+We're sorry to hear you're experiencing this issue.
+
+After reviewing the document, we noticed that it is a dynamic PDF containing interactive form fields. We recommend printing the document to PDF and saving the printed version. This process will flatten the existing form fields, allowing you to upload the flattened PDF to DocuSign and add the required fields using DocuSign instead.
+
+Please let us know if the issue persists after trying this, and we'll be happy to assist further."
+
+Envelope ID for task 2: "f6c62707-81b1-8107-81e0-ec46f872017a"
+
+Task 2 response
+
+"Hi,
+
+We're sorry to hear you're experiencing this issue.
+
+I understand that this template was enabled for Template Matching in your Demo account. However, this setting is account-specific, so it is not automatically carried over when you upload the template to your Production account.
+
+Can you please go to My preferences>> Template matching and make sure that it is enabled from there on your production account. 
+
+After this, please click the three dots next to the template in your Production account and enable Template Matching? This should make the template available for template matching.
+
+For more information about how Template Matching works, please refer to the following support article:
+https://support.docusign.com/s/document-item?language=en_US&bundleId=jux1643235969954&topicId=qsw1578456612287.html&_LANG=enus
+
+If you've already enabled Template Matching in your Production account and are still experiencing the issue, please let us know, and we'll be happy to investigate further."
+
+
+Envelope sent for task 3 "0d552452-63c0-8a7b-80e5-c8663179014e"
+
+
