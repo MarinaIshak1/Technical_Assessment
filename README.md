@@ -37,7 +37,7 @@ https://support.docusign.com/s/document-item?language=en_US&bundleId=jux16432359
 If you've already enabled Template Matching in your Production account and are still experiencing the issue, please let us know, and we'll be happy to investigate further."
 
 
-#**In Task 4:**
+**In Task 4:**
 
 Error message 1: "{
   "errorCode": "INVALID_REQUEST_PARAMETER",
