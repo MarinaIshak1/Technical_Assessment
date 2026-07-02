@@ -1,6 +1,9 @@
-**Envelope ID for task 1: "05702bcc-706a-8a79-8005-6e8f857c01d0"**
+**Envelope ID for task 1 "05702bcc-706a-8a79-8005-6e8f857c01d0"**
+**Envelope ID for task 3 "0d552452-63c0-8a7b-80e5-c8663179014e"**
+**Envelope ID for task 4  "112022a0-5cf2-8636-8133-26b1007c0145"**
 
-Task 1 response
+
+**Task 1 response**
 
 "Hi,
 
@@ -12,7 +15,8 @@ Please let us know if the issue persists after trying this, and we'll be happy t
 
 Envelope ID for task 2: "f6c62707-81b1-8107-81e0-ec46f872017a"
 
-Task 2 response
+
+**Task 2 response**
 
 "Hi,
 
@@ -30,10 +34,7 @@ https://support.docusign.com/s/document-item?language=en_US&bundleId=jux16432359
 If you've already enabled Template Matching in your Production account and are still experiencing the issue, please let us know, and we'll be happy to investigate further."
 
 
-Envelope sent for task 3 "0d552452-63c0-8a7b-80e5-c8663179014e"
-
-In Task 4 :
-Envelope ID: 112022a0-5cf2-8636-8133-26b1007c0145
+#**In Task 4:**
 
 Error message 1: "{
   "errorCode": "INVALID_REQUEST_PARAMETER",
