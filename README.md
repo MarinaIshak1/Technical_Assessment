@@ -33,8 +33,43 @@ If you've already enabled Template Matching in your Production account and are s
 Envelope sent for task 3 "0d552452-63c0-8a7b-80e5-c8663179014e"
 
 In Task 4 :
-recipientId is now "1" and "2"  (Unique ids), 
-Added a valid email for Bruce Wayne, 
-Fixed xPosition to a positive value, 
-Fixed pagenumber to pageNumber (camel case).
+Envelope ID: 112022a0-5cf2-8636-8133-26b1007c0145
+
+Error message 1: "{
+  "errorCode": "INVALID_REQUEST_PARAMETER",
+  "message": "The request contained at least one invalid parameter. Invalid value for xPosition, must be greater than or equal to 0."
+}
+Fixed by this: Fixed xPosition to a positive value, 
+
+Error message 2: "{
+  "errorCode": "ENVELOPE_HAS_DUPLICATE_RECIPIENTS",
+  "message": "The specified envelope has duplicate recipients."
+}"
+Fixed by: recipientId is now "1" and "2"  (Unique ids)
+
+Error message 3: "{
+  "errorCode": "TAB_REFERS_TO_MISSING_DOCUMENT",
+  "message": "The DocumentId specified in the tab element does not refer to a document in this envelope. Tab refers to DocumentId 2 which is not present."
+}"
+ Fixed to "1" since only one document exists in the envelope,
+
+ Error message 4: "{
+  "errorCode": "TAB_PAGENUMBER_IS_NOT_IN_DOCUMENT",
+  "message": "The pagenumber specified in the tab element is not in the document that the tab refers to. Tab on Page 2 of Document 1 for Recipient 2"
+}"
+Fixed to 1 as the document has only 1 page,
+
+Error message 5: "{
+  "errorCode": "INVALID_EMAIL_ADDRESS_FOR_RECIPIENT",
+  "message": "The email address for the recipient is invalid. The recipient Id follows. Recipient Id: 2"
+}
+"
+Fixed by adding a valid email for Bruce Wayne, 
+
+Error message 6: " {
+  "errorCode": "ENVELOPE_IS_INCOMPLETE",
+  "message": "The Envelope is not Complete. A Complete Envelope Requires Documents, Recipients, Tabs, and a Subject Line."
+}"
+
+Fixed by adding "emailSubject": "Please sign this document"
 
